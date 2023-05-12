@@ -1,0 +1,10 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Welcome to my app."
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Here you can change your settings."
+  }
+}
