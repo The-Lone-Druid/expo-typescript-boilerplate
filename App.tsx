@@ -17,6 +17,8 @@ import RootNavigation from "./src/RootNavigation";
 import { useMaterial3Theme } from "@pchmn/expo-material3-theme";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./src/localization/i18n";
+import { useAppColorScheme, useDeviceContext } from "twrnc";
+import tw from "./src/theme/tailwind.theme";
 
 const NavigationContainerTheme = adaptNavigationTheme({
   reactNavigationLight: DefaultTheme,
@@ -26,8 +28,11 @@ const NavigationContainerTheme = adaptNavigationTheme({
 });
 
 export default function App() {
+  useDeviceContext(tw, { withDeviceColorScheme: false });
   const colorScheme = useColorScheme();
   const { theme } = useMaterial3Theme();
+  const [twColorScheme, toggleColorScheme, setTwColorScheme] =
+    useAppColorScheme(tw);
 
   const paperTheme =
     colorScheme === "dark"
@@ -39,6 +44,10 @@ export default function App() {
       : NavigationContainerTheme.LightTheme;
   const statusBarStyle =
     colorScheme === "dark" ? "light-content" : "dark-content";
+
+  React.useEffect(() => {
+    setTwColorScheme(colorScheme);
+  }, []);
 
   return (
     <>

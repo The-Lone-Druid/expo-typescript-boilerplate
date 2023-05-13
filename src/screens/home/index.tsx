@@ -21,15 +21,9 @@ const Home = (props: Props) => {
             This boilerplate contains production ready code for your next React
             Native project. Here's the List of features:
           </Text>
-          <View style={tw`p-2 mt-4 rounded-[10px] bg-teal-100 bg-opacity-10`}>
-            <Text style={tw`font-bold`}>
-              NOTE: Click on any of the feature below to understand more about
-              them.
-            </Text>
-          </View>
           <View style={tw`mt-4`}>
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               title="Localization"
               titleStyle={tw`font-bold`}
               description="This boilerplate can be localized As per your need, currently it's configured with English language 'en.json'."
@@ -37,7 +31,7 @@ const Home = (props: Props) => {
               descriptionNumberOfLines={3}
             />
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               titleStyle={tw`font-bold`}
               title="Cache Management"
               description="With the help of Redux Toolkit, this boilerplate has a strong Cache management system for performance."
@@ -45,7 +39,7 @@ const Home = (props: Props) => {
               descriptionNumberOfLines={3}
             />
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               titleStyle={tw`font-bold`}
               title="REST API Management"
               description="Thanks to Redux Toolkit's RTK Query, which helps in managing REST API's in a very efficient way."
@@ -53,7 +47,7 @@ const Home = (props: Props) => {
               descriptionNumberOfLines={3}
             />
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               titleStyle={tw`font-bold`}
               title="Multi Environment Support"
               description="This boilerplate has support for multiple .env files, have a look at start.sh file for more details."
@@ -61,7 +55,7 @@ const Home = (props: Props) => {
               descriptionNumberOfLines={3}
             />
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               titleStyle={tw`font-bold`}
               title="Material First Theme"
               description="This Boilerplate comes with React Native Paper pre installed, configured and ready to use."
@@ -69,7 +63,7 @@ const Home = (props: Props) => {
               descriptionNumberOfLines={3}
             />
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               titleStyle={tw`font-bold`}
               title="Tailwind CSS Classnames"
               description="This Boilerplate is configured with Tailwind CSS to avoid js style objects and focus more on classnames."
@@ -77,7 +71,7 @@ const Home = (props: Props) => {
               descriptionNumberOfLines={3}
             />
             <List.Item
-              style={tw`bg-white bg-opacity-10 rounded-[10px] mb-4`}
+              style={tw`bg-black dark:bg-white bg-opacity-10 rounded-[10px] mb-4`}
               titleStyle={tw`font-bold`}
               title="Dark Theme Support"
               description="This Boilerplate has support for Dark Theme, you can change it from Settings screen and it's also system adaptive."
